@@ -1,0 +1,12 @@
+configuration {
+    show-icons: true;
+
+    display-ssh: "[SSH] ";
+    display-run: "[RUN] ";
+    display-drun: "[DRUN] ";
+    display-window: "[WINDOW] ";
+    display-combi: "[COMBI] ";
+    display-filebrowser: "[FILEBROWSER] ";
+}
+
+@theme "./theme.rasi"
