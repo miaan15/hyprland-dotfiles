@@ -98,15 +98,15 @@
         "tooltip": true,
         "format": " {} {icon} ",
         "format-icons": {
-            "notification": "[N]<span foreground='red'><sup>+</sup></span>",
-            "none": "[N]",
-            "dnd-notification": "[DND]<span foreground='red'><sup>+</sup></span>",
-            "dnd-none": "[DND]",
-            "inhibited-notification": "[I]<span foreground='red'><sup>+</sup></span>",
-            "inhibited-none": "[I]",
+            "notification": "[N*]",
+            "none": "[N] ",
+            "dnd-notification": "[DND*]",
+            "dnd-none": "[DND ]",
+            "inhibited-notification": "[I*]",
+            "inhibited-none": "[I] ",
             "dnd-inhibited-notification":
-                "[DND-I]<span foreground='red'><sup>+</sup></span>",
-            "dnd-inhibited-none": "[DND-I]"
+                "[DND-I*]",
+            "dnd-inhibited-none": "[DND-I] "
         },
         "return-type": "json",
         "exec-if": "which swaync-client",
