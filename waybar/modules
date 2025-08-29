@@ -1,0 +1,122 @@
+{
+    "hyprland/workspaces": {
+        "active-only": false,
+        "all-outputs": true,
+        "format": "{icon}{id}{icon}",
+        "show-special": false,
+        "on-click": "activate",
+        "on-scroll-up": "hyprctl dispatch workspace e+1",
+        "on-scroll-down": "hyprctl dispatch workspace e-1",
+        "format-icons": {
+            "active": "_",
+            "default": " "
+        }
+    },
+
+    "clock": {
+        "interval": 1,
+        "format": " [T] {:%H:%M} ",
+        "format-alt": " [T] {:%H:%M | %d/%M/%Y %A} ",
+        "tooltip": false,
+    },
+
+    "hyprland/window": {
+        "format": " >> {} ",
+        "max-length": 60,
+        "separate-outputs": true,
+        "offscreen-css": true,
+        "offscreen-css-text": "(inactive)",
+    },
+
+    "cpu": {
+        "interval": 1,
+        "format": " {usage}% [CPU] ",
+        "on-click-right": "gnome-system-monitor"
+    },
+
+    "memory": {
+        "interval": 10,
+        "format": " {percentage}% [RAM] ",
+        "format-alt": " {used:0.1f}/{total:0.1f}GB [RAM]",
+        "format-alt-click": "left",
+        "tooltip": true,
+        "tooltip-format": "{used:0.1f}GB/{total:0.1f}GB",
+        "on-click-right": "gnome-system-monitor"
+    },
+
+    "temperature": {
+        "interval": 5,
+        "tooltip": false,
+        "hwmon-path": [
+            "/sys/class/hwmon/hwmon1/temp1_input",
+        "/sys/class/thermal/thermal_zone0/temp"
+        ],
+        "critical-threshold": 82,
+        "format-critical": "{temperatureC}°C {icon}",
+        "format": " {temperatureC}°C {icon} ",
+        "format-icons": ["[T]"],
+    },
+
+    "pulseaudio": {
+        "format": " {volume}% {icon} ",
+        "format-bluetooth": " [BT] {volume}% {icon} ",
+        "format-muted": "[MUTE]",
+        "format-icons": {
+            "headphone": "[S*]",
+            "hands-free": "[S]",
+            "headset": "[S*]",
+            "phone": "[S]",
+            "portable": "[S]",
+            "car": "[S]",
+            "default": ["[S]", "[S]", "[S]", "[S]"],
+            "ignored-sinks": ["Easy Effects Sink"]
+        },
+        "scroll-step": 5.0,
+        "on-click-right": "pavucontrol -t 3",
+        "tooltip-format": "{icon} {desc} | {volume}%",
+        "smooth-scrolling-threshold": 1
+    },
+
+    "network": {
+        "interval": 1,
+        "format-wifi": " {essid} [W] ",
+        "format-ethernet": " {ifname} [E] ",
+        "format-disconnected": " [DISCONNECTED] ",
+        "tooltip-format": "{ifname} via {gwaddr}\n{ipaddr}/{cidr}",
+        "on-click-right": "nm-connection-editor"
+    },
+
+    "battery": {
+        "interval": 1,
+        "format": " {capacity}% [BAT] ",
+        "format-charging": " {capacity}% [BAT*] ",
+        "format-critical": " {capacity}% [LOW] ",
+        "critical": 100
+    },
+
+    "custom/swaync": {
+        "tooltip": true,
+        "format": " {} {icon} ",
+        "format-icons": {
+            "notification": "[N]<span foreground='red'><sup>+</sup></span>",
+            "none": "[N]",
+            "dnd-notification": "[DND]<span foreground='red'><sup>+</sup></span>",
+            "dnd-none": "[DND]",
+            "inhibited-notification": "[I]<span foreground='red'><sup>+</sup></span>",
+            "inhibited-none": "[I]",
+            "dnd-inhibited-notification":
+                "[DND-I]<span foreground='red'><sup>+</sup></span>",
+            "dnd-inhibited-none": "[DND-I]"
+        },
+        "return-type": "json",
+        "exec-if": "which swaync-client",
+        "exec": "swaync-client -swb",
+        "on-click": "sleep 0.1 && swaync-client -t -sw",
+        "on-click-right": "swaync-client -d -sw",
+            "escape": true
+    },
+
+    "custom/seperator": {
+        "format": "|"
+    }
+}
