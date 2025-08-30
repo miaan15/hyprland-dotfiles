@@ -57,10 +57,16 @@ tooltip {
 #workspaces button:hover {
   background: @hvr-bg;
   color: @hvr-fg;
+  outline: none;
+  box-shadow: none;
 }
 #workspaces button.active {
   background: @act-bg;
   color: @act-fg;
+}
+#workspaces buttonfocus {
+  outline: none;
+  box-shadow: none;
 }
 
 #custom-l_end {
@@ -96,7 +102,6 @@ tooltip {
   border-radius: 0;
 }
 
-/* Remove gaps between adjacent members of a pill */
 #custom-l_end + * {
   margin-left: 0;
 }

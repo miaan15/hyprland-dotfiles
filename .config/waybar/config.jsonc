@@ -53,8 +53,8 @@
     "format": "{icon}",
     "rotate": 0,
     "format-icons": {
-      "activated": "<span size='120%'>󰥔</span>",
-      "deactivated": "<span size='120%'></span>"
+      "activated": "<span size='160%'>󰥔</span>",
+      "deactivated": "<span size='160%'></span>"
     }
   },
 
@@ -122,7 +122,7 @@
 
   "network": {
     "tooltip": true,
-    "format-wifi": "<span size='120%'></span> {essid}",
+    "format-wifi": "<span size='150%'></span> {essid}",
     "rotate": 0,
     "format-ethernet": "<span size='120%'>󰈀</span> {ifname}",
     "tooltip-format": "Network: <big><b>{essid}</b></big>\nSignal strength: <b>{signaldBm}dBm ({signalStrength}%)</b>\nFrequency: <b>{frequency}MHz</b>\nInterface: <b>{ifname}</b>\nIP: <b>{ipaddr}/{cidr}</b>\nGateway: <b>{gwaddr}</b>\nNetmask: <b>{netmask}</b>",
@@ -130,28 +130,29 @@
     "format-disconnected": "<span size='120%'>󰖪</span> :(",
     "tooltip-format-disconnected": "Disconnected",
     "format-alt": " {bandwidthDownBytes}  {bandwidthUpBytes}",
+    "on-click-right": "nm-connection-editor",
     "interval": 2
   },
 
   "pulseaudio": {
     "format": "{icon} {volume}",
     "rotate": 0,
-    "format-muted": "<span size='120%'></span> :(",
+    "format-muted": "<span size='160%'></span>",
     "on-click-right": "pavucontrol -t 3",
     "scroll-step": 5.0,
     "smooth-scrolling-threshold": 1,
     "tooltip-format": "{desc} // {volume}%",
     "format-icons": {
-      "headphone": "<span size='120%'></span>",
-      "hands-free": "<span size='120%'></span>",
-      "headset": "<span size='120%'></span>",
-      "phone": "<span size='120%'></span>",
-      "portable": "<span size='120%'></s<span size='120%'>p</span>an>",
-      "car": "<span size='120%'></span>",
+      "headphone": "<span size='150%'></span>",
+      "hands-free": "<span size='150%'></span>",
+      "headset": "<span size='150%'></span>",
+      "phone": "<span size='150%'></span>",
+      "portable": "<span size='150%'></s<span size='120%'>p</span>an>",
+      "car": "<span size='150%'></span>",
       "default": [
-        "<span size='120%'></span>",
-        "<span size='120%'></span>",
-        "<span size='120%'></span>"
+        "<span size='160%'></span>",
+        "<span size='160%'></span>",
+        "<span size='160%'></span>"
       ]
     }
   },
@@ -159,8 +160,8 @@
   "pulseaudio#microphone": {
     "format": "{format_source}",
     "rotate": 0,
-    "format-source": "<span size='120%'></span>",
-    "format-source-muted": "<span size='120%'></span>",
+    "format-source": "<span size='160%'></span>",
+    "format-source-muted": "<span size='160%'></span>",
     "on-click-right": "pavucontrol -t 4",
     "tooltip-format": "{source_desc} // {source_volume}%"
   },
@@ -199,7 +200,7 @@
       "notification": "<span size='120%'></span>*",
       "none": "<span size='120%'></span> ",
       "dnd-notification": "<span size='120%'></span> ",
-      "dnd-none": "<span size='120%'></span> ",
+      "dnd-none": "<span size='160%'></span> ",
       "inhibited-notification": "<span size='120%'></span>*",
       "inhibited-none": "<span size='120%'></span> ",
       "dnd-inhibited-notification": "<span size='120%'></span> ",
