@@ -1,86 +1,120 @@
+@import "./theme.css";
+
 * {
+  border: none;
+  border-radius: 0;
   font-family: "monospace";
-  min-height: 0;
   font-weight: bold;
-  font-feature-settings: '"zero", "ss01", "ss02", "ss03", "ss04", "ss05", "cv31"';
-  padding: 1px;
+  font-size: 15px;
+  min-height: 18px;
+  transition:
+    background-color 60ms ease,
+    color 60ms ease,
+    border-color 60ms ease;
 }
 
 window#waybar {
-  background-color: rgba(0, 0, 0, 0);
-  transition-property: background-color;
-  transition-duration: 0.5s;
-}
-
-window#waybar.hidden {
-  opacity: 0.5;
-}
-
-window#waybar.empty {
-  background-color: transparent;
-}
-
-window#waybar.empty #window {
-  padding: 0px;
-  border: 0px;
-  background-color: transparent;
+  background: @bar-bg;
+  border-radius: 6px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
 }
 
 tooltip {
-  opacity: 1;
-  border-radius: 0px;
+  background: @main-bg;
+  color: @main-fg;
+  border-radius: 6px;
+  border-width: 0;
 }
 
-tooltip label {
-  padding: 10px;
-  color: #9ddb93;
-}
-
-#custom-cava,
+#idle_inhibitor,
+#workspaces,
 #clock,
 #cpu,
 #memory,
-#mpris,
-#network,
-#pulseaudio,
 #temperature,
-#workspaces,
-#custom-menu,
+#network,
+#bluetooth,
+#pulseaudio,
+#pulseaudio.microphone,
+#battery,
 #custom-swaync,
-#custom-seperator,
-#battery {
-  border-radius: 0px;
-  color: #9ddb93;
-  padding-top: 3px;
-  padding-bottom: 3px;
-  padding-left: 3px;
-  padding-right: 3px;
+#custom-l_end,
+#custom-r_end {
+  color: @main-fg;
+  margin: 6px 0;
+  background: @main-bg;
+  padding: 4px 10px;
 }
 
-#window {
-  color: #9ddb93;
-  padding-top: 3px;
-  padding-bottom: 3px;
-  padding-right: 6px;
-  padding-left: 6px;
-  border-radius: 0px;
+#workspaces {
+  padding: 2px 0;
 }
-
 #workspaces button {
-  margin: 1px;
-  box-shadow: none;
-  text-shadow: none;
-  border-radius: 0px;
-  padding-left: 6px;
-  padding-right: 6px;
-  background-color: #9ddb93;
-  color: #282828;
+  background: transparent;
+  color: @main-fg;
+  border-radius: 8px;
+}
+#workspaces button:hover {
+  background: @hvr-bg;
+  color: @hvr-fg;
+}
+#workspaces button.active {
+  background: @act-bg;
+  color: @act-fg;
 }
 
-#temperature.critical {
-  background-color: red;
+#custom-l_end {
+  margin-left: 5px;
+  margin-right: 0;
+  padding-left: 0px;
+  padding-right: 0px;
+  border-radius: 8px 0 0 8px;
 }
 
-#battery.critical {
-  background-color: red;
+#custom-r_end {
+  margin-left: 0;
+  margin-right: 5px;
+  padding-left: 0px;
+  padding-right: 0px;
+  border-radius: 0 8px 8px 0;
+}
+
+#idle_inhibitor,
+#workspaces,
+#clock,
+#cpu,
+#memory,
+#temperature,
+#network,
+#bluetooth,
+#pulseaudio,
+#pulseaudio.microphone,
+#battery,
+#custom-swaync {
+  margin-left: 0;
+  margin-right: 0;
+  border-radius: 0;
+}
+
+/* Remove gaps between adjacent members of a pill */
+#custom-l_end + * {
+  margin-left: 0;
+}
+* + #custom-r_end {
+  margin-left: 0;
+}
+
+#idle_inhibitor:hover,
+#clock:hover,
+#cpu:hover,
+#memory:hover,
+#temperature:hover,
+#network:hover,
+#bluetooth:hover,
+#pulseaudio:hover,
+#pulseaudio.microphone:hover,
+#battery:hover,
+#custom-swaync:hover {
+  background: @hvr-bg;
+  color: @hvr-fg;
 }
