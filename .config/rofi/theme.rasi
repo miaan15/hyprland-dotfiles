@@ -1,91 +1,9 @@
 * {
-  font: "monospace 15";
+    foreground: rgba(232, 229, 237, 1); /* #e8e5ed */
+    background: rgba(18, 11, 26, 1); /* #120b1a */
+    primary: rgba(61, 49, 82, 1); /* #3d3152 */
+    secondary: rgba(75, 71, 88, 1); /* #4b4758 */
+    accent: rgba(87, 189, 50, 1); /* #57bd32 */
 
-  fg: rgba(235,245,235,1.0);
-  bg: rgba(60,70,140,0.5);
-  accent: rgba(135,210,125,1.0);
-  accent-fg: rgba(8,10,8,1.0);
-  border-col: @accent;
-
-  text-color:  @fg;
-}
-
-window {
-  background-color: @bg;
-  border-color: @border-col;
-  border: 3px;
-  width: 25em;
-  location: center;
-  anchor: center;
-  transparency: "real";
-}
-
-mainbox {
-  background-color: transparent;
-  children: [ inputbar, listview ];
-}
-
-inputbar {
-  background-color: @accent;
-  border-radius: 0;
-  padding: 10px;
-  children: [ prompt, entry ];
-}
-
-prompt {
-  background-color: @accent;
-  text-color: @accent-fg;
-}
-
-entry {
-  expand: true;
-  background-color: @accent;
-  text-color: @accent-fg;
-  caret-color: @accent;
-}
-
-listview {
-  background-color: transparent;
-  layout: vertical;
-  cycle: false;
-  columns: 1;
-  spacing: 2px;
-  lines: 10;
-  border-radius: 0;
-  padding: 0px;
-}
-
-element {
-  background-color: transparent;
-  padding: 6px 8px;
-  border: 0px;
-  border-radius: 0;
-}
-
-element selected {
-  background-color: @accent;
-  text-color: @accent-fg;
-}
-
-element-text {
-  background-color: transparent;
-  text-color: @fg;
-  highlight: @accent;
-}
-
-element-text selected {
-  background-color: transparent;
-  text-color: @accent-fg;
-  highlight: @fg;
-}
-
-element-icon {
-  size: 1.0em;
-  padding: 0px 10px 0px 0px;
-  background-color: transparent;
-}
-
-message, textbox, mode-switcher, scrollbar {
-  background-color: transparent;
-  border: 0px;
+    primary-50: rgba(61, 49, 82, 0.5);
 }

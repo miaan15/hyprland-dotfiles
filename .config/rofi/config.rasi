@@ -1,12 +1,165 @@
 configuration {
-    show-icons: true;
-
-    display-ssh: "[SSH] ";
-    display-run: "[RUN] ";
-    display-drun: "[DRUN] ";
-    display-window: "[WINDOW] ";
-    display-combi: "[COMBI] ";
-    display-filebrowser: "[FILEBROWSER] ";
+    font:                       "monospace";
+    modi:                       "drun";
+    show-icons:                 true;
+    icon-theme:                 "Tela-circle-green-dark";
+    display-drun:               "";
+    display-run:                "";
+    display-filebrowser:        "";
+    display-window:             "";
+    display-emoji:              "󰞅";
+    display-clipboard:          "";
+	drun-display-format:        "{name}";
+    window-format:              "{t}";
 }
 
-@theme "./theme.rasi"
+@import                          "./theme.rasi"
+
+window {
+    transparency:                "real";
+    location:                    center;
+    anchor:                      center;
+    fullscreen:                  false;
+    width:                       450px;
+    x-offset:                    0px;
+    y-offset:                    0px;
+
+    enabled:                     true;
+    margin:                      0px;
+    padding:                     0px;
+    border:                      10px solid;
+    border-radius:               8px;
+    border-color:                @primary;
+    background-color:            @primary;
+    cursor:                      "default";
+}
+
+mainbox {
+    enabled:                     true;
+    spacing:                     0px;
+    margin:                      0px;
+    padding:                     0px;
+    border:                      0px solid;
+    border-radius:               8px;
+    border-color:                transparent;
+    background-color:            transparent;
+    children:                    [ "inputbar", "listview" ];
+}
+
+inputbar {
+    enabled:                     true;
+    spacing:                     10px;
+    margin:                      0px;
+    padding:                     15px;
+    border:                      0px 0px 10px 0px;
+    border-radius:               8px 8px 8px 8px;
+    border-color:                @primary;
+    background-color:            @accent;
+    text-color:                  @background;
+    children:                    ["prompt", "entry" ];
+}
+
+prompt {
+    enabled:                     true;
+    background-color:            inherit;
+    text-color:                  inherit;
+}
+textbox-prompt-colon {
+    enabled:                     true;
+    expand:                      false;
+    str:                         "::";
+    background-color:            inherit;
+    text-color:                  inherit;
+}
+entry {
+    enabled:                     true;
+    background-color:            inherit;
+    text-color:                  inherit;
+    cursor:                      text;
+    placeholder:                 "Search...";
+    placeholder-color:           inherit;
+}
+
+listview {
+    enabled:                     true;
+    columns:                     1;
+    lines:                       6;
+    cycle:                       true;
+    dynamic:                     true;
+    scrollbar:                   false;
+    layout:                      vertical;
+    reverse:                     false;
+    fixed-height:                true;
+    fixed-columns:               true;
+
+    spacing:                     0px;
+    margin:                      0px;
+    padding:                     0px;
+    border:                      2px solid;
+    border-radius:               8px;
+    border-color:                @accent;
+    background-color:            transparent;
+    text-color:                  @foreground;
+    cursor:                      "default";
+}
+scrollbar {
+    handle-width:                5px ;
+    handle-color:                @primary;
+    border-radius:               0px;
+    background-color:            @secondary;
+}
+
+element {
+    enabled:                     true;
+    spacing:                     10px;
+    margin:                      0px;
+    padding:                     8px;
+    border:                      0px solid;
+    border-radius:               0px;
+    border-color:                @secondary;
+    background-color:            transparent;
+    text-color:                  @foreground;
+    cursor:                      pointer;
+}
+element alternate.normal {
+    background-color:            @secondary;
+    text-color:                  @foreground;
+}
+element normal.normal {
+    background-color:            @secondary;
+    text-color:                  @foreground;
+}
+element selected.normal {
+    background-color:            @primary;
+    text-color:                  @foreground;
+}
+element-icon {
+    background-color:            transparent;
+    text-color:                  inherit;
+    size:                        32px;
+    cursor:                      inherit;
+}
+element-text {
+    background-color:            transparent;
+    text-color:                  inherit;
+    highlight:                   inherit;
+    cursor:                      inherit;
+    vertical-align:              0.5;
+    horizontal-align:            0.0;
+}
+
+error-message {
+    padding:                     15px;
+    border:                      2px solid;
+    border-radius:               12px;
+    border-color:                @primary;
+    background-color:            @background;
+    text-color:                  @foreground;
+}
+textbox {
+    background-color:            @background;
+    text-color:                  @foreground;
+    vertical-align:              0.5;
+    horizontal-align:            0.0;
+    highlight:                   none;
+}
