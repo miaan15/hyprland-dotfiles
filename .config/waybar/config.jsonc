@@ -62,7 +62,7 @@
     "format": "{icon}",
     "format-icons": {
       "active": "",
-      "default": ""
+      "default": ""
     },
     "disable-scroll": true,
     "rotate": 0,
@@ -167,7 +167,7 @@
   },
 
   "bluetooth": {
-    "format": "<span size='120%'></span>",
+    "format": "<span size='100%'></span>",
     "format-connected": "<span size='120%'>󰂱</span>",
     "format-disabled": "<span size='120%'>󰂲</span>",
     "rotate": 0,

@@ -4,9 +4,9 @@
   border: none;
   border-radius: 0;
   font-family: "monospace";
-  font-weight: bold;
-  font-size: 15px;
-  min-height: 18px;
+  font-weight: 900;
+  font-size: 12px;
+  min-height: 10px;
   transition:
     background-color 60ms ease,
     color 60ms ease,
