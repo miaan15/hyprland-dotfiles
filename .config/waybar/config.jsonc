@@ -75,9 +75,8 @@
   },
 
   "clock": {
-    "format": "<span size='120%' color='#a6d189'>󰥔</span> {:%R}",
+    "format": "<span size='120%' color='#a6d189'>󰥔</span> {:%R | %d/%m/%Y}",
     "rotate": 0,
-    "format-alt": "<span size='120%' color='#a6d189'>󰥔</span> {:%R 󰃭 %d/%m/%Y}",
     "tooltip-format": "<tt>{calendar}</tt>",
     "calendar": {
       "mode": "month",
@@ -122,7 +121,7 @@
 
   "network": {
     "tooltip": true,
-    "format-wifi": "<span size='150%' color='#a6d189'></span> {essid}",
+    "format-wifi": "<span size='120%' color='#a6d189'></span> {essid}",
     "rotate": 0,
     "format-ethernet": "<span size='120%' color='#a6d189'>󰈀</span> {ifname}",
     "tooltip-format": "Network: <big><b>{essid}</b></big>\nSignal strength: <b>{signaldBm}dBm ({signalStrength}%)</b>\nFrequency: <b>{frequency}MHz</b>\nInterface: <b>{ifname}</b>\nIP: <b>{ipaddr}/{cidr}</b>\nGateway: <b>{gwaddr}</b>\nNetmask: <b>{netmask}</b>",
@@ -137,22 +136,22 @@
   "pulseaudio": {
     "format": "{icon} {volume}",
     "rotate": 0,
-    "format-muted": "<span size='160%' color='#a6d189'></span>",
+    "format-muted": "<span size='125%' color='#a6d189'></span>",
     "on-click-right": "pavucontrol -t 3",
     "scroll-step": 5.0,
     "smooth-scrolling-threshold": 1,
     "tooltip-format": "{desc} // {volume}%",
     "format-icons": {
-      "headphone": "<span size='150%' color='#a6d189'></span>",
-      "hands-free": "<span size='150%' color='#a6d189'></span>",
-      "headset": "<span size='150%' color='#a6d189'></span>",
-      "phone": "<span size='150%' color='#a6d189'></span>",
-      "portable": "<span size='150%' color='#a6d189'></span>",
-      "car": "<span size='150%' color='#a6d189'></span>",
+      "headphone": "<span size='120%' color='#a6d189'></span>",
+      "hands-free": "<span size='120%' color='#a6d189'></span>",
+      "headset": "<span size='120%' color='#a6d189'></span>",
+      "phone": "<span size='120%' color='#a6d189'></span>",
+      "portable": "<span size='120%' color='#a6d189'></span>",
+      "car": "<span size='120%' color='#a6d189'></span>",
       "default": [
-        "<span size='160%' color='#a6d189'></span>",
-        "<span size='160%' color='#a6d189'></span>",
-        "<span size='160%' color='#a6d189'></span>"
+        "<span size='125%' color='#a6d189'></span>",
+        "<span size='125%' color='#a6d189'></span>",
+        "<span size='125%' color='#a6d189'></span>"
       ]
     }
   },
