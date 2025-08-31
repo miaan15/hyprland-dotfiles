@@ -20,7 +20,7 @@ menu="$(jq -r '
   | "[\(.value.class)] \(.value.title)"
 ' <<<"$json")"
 
-idx="$(printf '%s\n' "$menu" | rofi -dmenu -i -p " Window" -format i || true)"
+idx="$(printf '%s\n' "$menu" | rofi -dmenu -i -p "" -format i || true)"
 [[ -z "${idx:-}" || "$idx" = "-1" ]] && exit 0
 
 addr="$(jq -r --argjson i "$idx" '.[$i].address' <<<"$json")"

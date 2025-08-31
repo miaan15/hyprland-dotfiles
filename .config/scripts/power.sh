@@ -2,13 +2,12 @@
 
 prompt() {
   rofi -dmenu -i -p "$1" -theme-str '
-    window { width: 380px; }
-    listview { lines: 8; }
-    * { font: "JetBrainsMono Nerd Font 11"; }' <<< "$2"
+    window { width: 320px; }
+    listview { lines: 7; }' <<< "$2"
 }
 
 confirm() {
-  choice="$(prompt "$1 — are you sure?" $'No\nYes')"
+  choice="$(prompt "$1 — are you sure?" $'Yes\nNo')"
   [[ "$choice" == "Yes" ]]
 }
 
@@ -22,8 +21,8 @@ lock_screen() {
   fi
 }
 
-power_menu=$'󰜉  Reboot\n  Shutdown\n󰒲  Hibernate\n  Lock\n󰍃  Logout\n󰤄  Suspend\n󰜗  Hybrid Sleep\n'
-choice="$(prompt "Power" "$power_menu")"
+power_menu=$'󰜉  Reboot\n󰤄  Suspend\n  Shutdown\n󰒲  Hibernate\n  Lock\n󰍃  Logout\n󰜗  Hybrid Sleep'
+choice="$(prompt "" "$power_menu")"
 
 case "$choice" in
   "󰜉  Reboot")
