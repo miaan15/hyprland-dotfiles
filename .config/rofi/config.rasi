@@ -1,7 +1,7 @@
 configuration {
     font:                       "monospace";
     modi:                       "drun";
-    show-icons:                 true;
+    show-icons:                 false;
     icon-theme:                 "Tela-circle-green-dark";
     display-drun:               "";
     display-run:                "";
@@ -9,7 +9,7 @@ configuration {
     display-window:             "";
     display-emoji:              "󰞅";
     display-clipboard:          "";
-	drun-display-format:        "{name}";
+    drun-display-format:        "{name}";
     window-format:              "{t}";
 }
 
@@ -122,16 +122,17 @@ element {
     cursor:                      pointer;
 }
 element alternate.normal {
-    background-color:            @primary;
+    background-color:            transparent;
     text-color:                  @foreground;
 }
 element normal.normal {
-    background-color:            @primary;
+    background-color:            transparent;
     text-color:                  @foreground;
 }
 element selected.normal {
-    background-color:            @accent;
-    text-color:                  @background;
+    background-color:            @primary;
+    text-color:                  @foreground;
+    border-radius:               8px;
 }
 element-icon {
     background-color:            transparent;
@@ -150,7 +151,7 @@ element-text {
 element-text selected {
     background-color:            transparent;
     text-color:                  inherit;
-    highlight:                   inherit;
+    highlight:                   @accent;
     cursor:                      inherit;
     vertical-align:              0.5;
     horizontal-align:            0.0;
