@@ -93,15 +93,15 @@
   },
 
   "mpris": {
-    "format": "{status-icon} {title:.30} - {artist:.20}",
-    "format-paused": "{status-icon} {title:.30} - {artist:.20}",
-    "format-disconnected": "<span color='#a6d189'></span>",
+    "format": "{status_icon} {title:.50} - {artist:.20}",
+    "format-stop": "<span foreground='#a6d189'></span>",
     "status-icons": {
-      "paused": "<span color='#a6d189'></span>",
-      "playing": "<span color='#a6d189'></span>"
+      "paused": "<span foreground='#a6d189'></span>",
+      "playing": "<span foreground='#a6d189'></span>"
     },
     "on-click": "playerctl play-pause",
-    "on-click-middle": "playerctl stop"
+    "on-click-middle": "playerctl stop",
+    "escape": true
   },
 
   "cpu": {
