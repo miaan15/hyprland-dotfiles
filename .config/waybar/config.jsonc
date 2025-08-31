@@ -100,7 +100,7 @@
       "paused": "<span color='#a6d189'></span>",
       "playing": "<span color='#a6d189'></span>"
     },
-    "on-click-right": "playerctl play-pause",
+    "on-click": "playerctl play-pause",
     "on-click-middle": "playerctl stop"
   },
 
@@ -140,12 +140,11 @@
     "format-wifi": "<span size='120%' color='#a6d189'></span> {essid}",
     "rotate": 0,
     "format-ethernet": "<span size='120%' color='#a6d189'>󰈀</span> {ifname}",
-    "tooltip-format": "Network: <big><b>{essid}</b></big>\nSignal strength: <b>{signaldBm}dBm ({signalStrength}%)</b>\nFrequency: <b>{frequency}MHz</b>\nInterface: <b>{ifname}</b>\nIP: <b>{ipaddr}/{cidr}</b>\nGateway: <b>{gwaddr}</b>\nNetmask: <b>{netmask}</b>",
+    "tooltip-format": "Network: <big><b>{essid}</b></big>\nSignal strength: <b>{signaldBm}dBm ({signalStrength}%)</b>\nFrequency: <b>{frequency}MHz</b>\nInterface: <b>{ifname}</b>\nIP: <b>{ipaddr}/{cidr}</b>\nGateway: <b>{gwaddr}</b>\nNetmask: <b>{netmask}</b>\nDownload: {bandwidthDownBytes}\nUpload: {bandwidthUpBytes}",
     "format-linked": "<span size='120%' color='#a6d189'>󰈀</span> {ifname} (No IP)",
     "format-disconnected": "<span size='120%' color='#a6d189'>󰖪</span> :(",
     "tooltip-format-disconnected": "Disconnected",
-    "format-alt": "<span color='#a6d189'></span> {bandwidthDownBytes} <span color='#a6d189'></span> {bandwidthUpBytes}",
-    "on-click-right": "nm-connection-editor",
+    "on-click": "nm-connection-editor",
     "interval": 2
   },
 
@@ -153,7 +152,7 @@
     "format": "{icon} {volume}",
     "rotate": 0,
     "format-muted": "<span size='125%' color='#a6d189'></span>",
-    "on-click-right": "pavucontrol -t 3",
+    "on-click": "pavucontrol -t 3",
     "scroll-step": 5.0,
     "smooth-scrolling-threshold": 1,
     "tooltip-format": "{desc} // {volume}%",
@@ -177,7 +176,7 @@
     "rotate": 0,
     "format-source": "<span size='160%' color='#a6d189'></span>",
     "format-source-muted": "<span size='160%' color='#a6d189'></span>",
-    "on-click-right": "pavucontrol -t 4",
+    "on-click": "pavucontrol -t 4",
     "tooltip-format": "{source_desc} // {source_volume}%"
   },
 
@@ -216,7 +215,6 @@
     "rotate": 0,
     "format-charging": "<span color='#a6d189'></span> {capacity}%",
     "format-plugged": "<span color='#a6d189'></span> {capacity}%",
-    "format-alt": "{time} {icon}",
     "format-icons": [
       "<span color='#a6d189'>󰂎</span>",
       "<span color='#a6d189'>󰁺</span>",
@@ -248,8 +246,8 @@
     "return-type": "json",
     "exec-if": "which swaync-client",
     "exec": "swaync-client -swb",
-    "on-click-right": "sleep 0.1 && swaync-client -t -sw",
-    "on-click": "swaync-client -d -sw",
+    "on-click": "sleep 0.1 && swaync-client -t -sw",
+    "on-click-right": "swaync-client -d -sw",
     "escape": true
   },
 
