@@ -21,6 +21,10 @@
 
     "custom/l_end",
     "clock",
+    "custom/r_end",
+
+    "custom/l_end",
+    "mpris",
     "custom/r_end"
   ],
   "modules-right": [
@@ -86,6 +90,18 @@
         "today": "<span color='#a6d189'><b>{}</b></span>"
       }
     }
+  },
+
+  "mpris": {
+    "format": "{status-icon} {title:.30} - {artist:.20}",
+    "format-paused": "{status-icon} {title:.30} - {artist:.20}",
+    "format-disconnected": "<span color='#a6d189'></span>",
+    "status-icons": {
+      "paused": "<span color='#a6d189'></span>",
+      "playing": "<span color='#a6d189'></span>"
+    },
+    "on-click-right": "playerctl play-pause",
+    "on-click-middle": "playerctl stop"
   },
 
   "cpu": {

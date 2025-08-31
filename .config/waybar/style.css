@@ -28,6 +28,7 @@ tooltip {
 #idle_inhibitor,
 #workspaces,
 #clock,
+#mpris,
 #cpu,
 #memory,
 #temperature,
@@ -87,6 +88,7 @@ tooltip {
 #idle_inhibitor,
 #workspaces,
 #clock,
+#mpris,
 #cpu,
 #memory,
 #temperature,
@@ -110,6 +112,7 @@ tooltip {
 
 #idle_inhibitor:hover,
 #clock:hover,
+#mpris:hover,
 #cpu:hover,
 #memory:hover,
 #temperature:hover,
