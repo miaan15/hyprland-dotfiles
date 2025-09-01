@@ -1,4 +1,4 @@
-@define-color bar-bg rgba(48, 52, 70, 1);
+@define-color bar-bg rgba(48, 52, 70, 0.65);
 
 @define-color main-bg #292c3c;
 @define-color main-fg #c6d0f5;
