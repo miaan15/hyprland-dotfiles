@@ -144,7 +144,7 @@
     "format-linked": "<span size='120%' color='#a6d189'>󰈀</span> {ifname} (No IP)",
     "format-disconnected": "<span size='120%' color='#a6d189'>󰖪</span> :(",
     "tooltip-format-disconnected": "Disconnected",
-    "on-click": "nm-connection-editor",
+    "on-click": "kitty -e nmtui",
     "interval": 2
   },
 
