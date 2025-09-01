@@ -15,13 +15,13 @@
 
 window#waybar {
   background: @bar-bg;
-  border-radius: 9px;
+  border-radius: 12px;
 }
 
 tooltip {
   background: @main-bg;
   color: @main-fg;
-  border-radius: 9px;
+  border-radius: 12px;
   border-width: 0;
 }
 
