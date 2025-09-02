@@ -1,8 +1,8 @@
 * {
     foreground: #c6d0f5;
     background: #303446;
-    primary: #626880;
-    secondary: #737994;
+    primary: #51576d;
+    secondary: #303446;
     accent: #a6d189;
 
     background-50: rgba(48, 52, 70, 0.5);
