@@ -20,10 +20,6 @@
     "custom/r_end",
 
     "custom/l_end",
-    "clock",
-    "custom/r_end",
-
-    "custom/l_end",
     "mpris",
     "custom/r_end"
   ],
@@ -46,6 +42,10 @@
 
     "custom/l_end",
     "battery",
+    "custom/r_end",
+
+    "custom/l_end",
+    "clock",
     "custom/r_end",
 
     "custom/l_end",
