@@ -20,6 +20,10 @@
     "custom/r_end",
 
     "custom/l_end",
+    "clock",
+    "custom/r_end",
+
+    "custom/l_end",
     "mpris",
     "custom/r_end"
   ],
@@ -42,10 +46,6 @@
 
     "custom/l_end",
     "battery",
-    "custom/r_end",
-
-    "custom/l_end",
-    "clock",
     "custom/r_end",
 
     "custom/l_end",
@@ -93,7 +93,7 @@
   },
 
   "mpris": {
-    "format": "{status_icon} {title:.50} - {artist:.20}",
+    "format": "{status_icon} {title:.45} | {artist:.15}",
     "format-stop": "<span foreground='#a6d189'></span>",
     "status-icons": {
       "paused": "<span foreground='#a6d189'></span>",
