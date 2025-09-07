@@ -79,7 +79,8 @@
   },
 
   "clock": {
-    "format": "<span size='120%' color='#a6d189'>󰥔</span> {:%R | %d/%m/%Y}",
+    "format": "<span size='120%' color='#a6d189'>󰥔</span> {:%R}",
+    "format-alt": "<span size='120%' color='#a6d189'>󰥔</span> {:%R | %d/%m/%Y}",
     "rotate": 0,
     "tooltip-format": "<tt>{calendar}</tt>",
     "calendar": {
