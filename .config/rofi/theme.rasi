@@ -5,5 +5,5 @@
     secondary: #303446;
     accent: #a6d189;
 
-    background-50: rgba(48, 52, 70, 0.5);
+    background-50: rgba(48, 52, 70, 0.8);
 }

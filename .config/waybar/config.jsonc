@@ -4,10 +4,10 @@
   "mod": "dock",
   "exclusive": true,
   "passthrough": false,
-  "margin-top": 3,
+  "margin-top": 0,
   "margin-bottom": 0,
-  "margin-left": 5,
-  "margin-right": 5,
+  "margin-left": 0,
+  "margin-right": 0,
   "height": 20,
 
   "modules-left": [
@@ -16,11 +16,11 @@
     "custom/r_end",
 
     "custom/l_end",
-    "hyprland/workspaces",
+    "custom/swaync",
     "custom/r_end",
 
     "custom/l_end",
-    "clock",
+    "hyprland/workspaces",
     "custom/r_end",
 
     "custom/l_end",
@@ -49,7 +49,7 @@
     "custom/r_end",
 
     "custom/l_end",
-    "custom/swaync",
+    "clock",
     "custom/r_end"
   ],
 
@@ -152,7 +152,7 @@
   "pulseaudio": {
     "format": "{icon} {volume}",
     "rotate": 0,
-    "format-muted": "<span size='125%' color='#a6d189'></span>",
+    "format-muted": "<span color='#a6d189'>||</span>",
     "on-click": "pavucontrol -t 3",
     "scroll-step": 5.0,
     "smooth-scrolling-threshold": 1,
@@ -235,14 +235,14 @@
     "tooltip": true,
     "format": "{icon}",
     "format-icons": {
-      "notification": "<span size='120%' color='#a6d189'></span>*",
-      "none": "<span size='120%' color='#a6d189'></span> ",
-      "dnd-notification": "<span size='120%' color='#a6d189'></span> ",
-      "dnd-none": "<span size='160%' color='#a6d189'></span> ",
-      "inhibited-notification": "<span size='120%' color='#a6d189'></span>*",
-      "inhibited-none": "<span size='120%' color='#a6d189'></span> ",
-      "dnd-inhibited-notification": "<span size='120%' color='#a6d189'></span> ",
-      "dnd-inhibited-none": "<span size='120%' color='#a6d189'></span> "
+      "notification": "<span size='120%' color='#c6d0f5'></span>",
+      "none": "<span size='120%' color='#a6d189'></span>",
+      "dnd-notification": "<span size='120%' color='#a6d189'></span>",
+      "dnd-none": "<span size='160%' color='#a6d189'></span>",
+      "inhibited-notification": "<span size='120%' color='#a6d189'></span>",
+      "inhibited-none": "<span size='120%' color='#a6d189'></span>",
+      "dnd-inhibited-notification": "<span size='120%' color='#a6d189'></span>",
+      "dnd-inhibited-none": "<span size='120%' color='#a6d189'></span>"
     },
     "return-type": "json",
     "exec-if": "which swaync-client",
