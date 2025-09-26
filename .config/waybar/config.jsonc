@@ -74,13 +74,13 @@
     "active-only": false,
     "on-click": "activate",
     "persistent-workspaces": {
-      "*": 4
+      "*": 5
     }
   },
 
   "clock": {
-    "format": "<span size='120%' color='#a6d189'>󰥔</span> {:%R}",
-    "format-alt": "<span size='120%' color='#a6d189'>󰥔</span> {:%R | %d/%m/%Y}",
+    "format": "<span size='120%' color='#a6d189'></span> {:%d/%m/%Y %a}",
+    "format-alt": "<span size='120%' color='#a6d189'>󰥔</span> {:%R}",
     "rotate": 0,
     "tooltip-format": "<tt>{calendar}</tt>",
     "calendar": {
@@ -106,7 +106,7 @@
   },
 
   "cpu": {
-    "interval": 10,
+    "interval": 9,
     "format": "<span size='120%' color='#a6d189'>󰍛</span> {usage}%",
     "rotate": 0
   },
@@ -115,7 +115,7 @@
     "states": {
       "c": 90
     },
-    "interval": 10,
+    "interval": 3,
     "format": "<span size='120%' color='#a6d189'></span> {percentage}%",
     "rotate": 0,
     "format-c": "<span size='120%' color='#a6d189'></span> {percentage}%",
@@ -128,7 +128,7 @@
     "states": {
       "c": 85
     },
-    "interval": 5,
+    "interval": 3,
     "critical-threshold": 85,
     "format": "<span color='#a6d189'></span> {temperatureC}°C",
     "format-c": "<span color='#a6d189'></span> {temperatureC}°C",
@@ -146,7 +146,7 @@
     "format-disconnected": "<span size='120%' color='#a6d189'>󰖪</span> :(",
     "tooltip-format-disconnected": "Disconnected",
     "on-click": "kitty -e nmtui",
-    "interval": 2
+    "interval": 1
   },
 
   "pulseaudio": {
@@ -212,6 +212,7 @@
       "warning": 30,
       "critical": 20
     },
+    "interval": 1,
     "format": "{icon} {capacity}%",
     "rotate": 0,
     "format-charging": "<span color='#a6d189'></span> {capacity}%",
