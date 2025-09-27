@@ -184,33 +184,33 @@
   "bluetooth": {
     "format": "<span size='100%' color='#a6d189'></span>",
     "format-connected": "<span size='120%' color='#a6d189'>󰂱</span>",
-    "format-disabled": "<span size='120%' color='#a6d189'>󰂲</span>",
-    "rotate": 0,
-    "format-connected-battery": "{icon} {num_connections}",
-    "format-icons": [
-      "<span color='#a6d189'>󰂎</span>",
-      "<span color='#a6d189'>󰁺</span>",
-      "<span color='#a6d189'>󰁻</span>",
-      "<span color='#a6d189'>󰁼</span>",
-      "<span color='#a6d189'>󰁽</span>",
-      "<span color='#a6d189'>󰁾</span>",
-      "<span color='#a6d189'>󰁿</span>",
-      "<span color='#a6d189'>󰂀</span>",
-      "<span color='#a6d189'>󰂁</span>",
-      "<span color='#a6d189'>󰂂</span>",
-      "<span color='#a6d189'>󰁹</span>"
-    ],
-    "tooltip-format": "{controller_alias}\n{num_connections} connected",
-    "tooltip-format-connected": "{controller_alias}\n{num_connections} connected\n\n{device_enumerate}",
-    "tooltip-format-enumerate-connected": "{device_alias}",
-    "tooltip-format-enumerate-connected-battery": "{device_alias}\t{icon} {device_battery_percentage}%"
+    "format-disabled": "<span size='120%' color='#a6d189'>󰂲</span>"
+    // "rotate": 0,
+    // "format-connected-battery": "{icon} {num_connections}",
+    // "format-icons": [
+    //   "<span color='#e78284'>󰂎</span>",
+    //   "<span color='#ea999c'>󰁺</span>",
+    //   "<span color='#e5c890'>󰁻</span>",
+    //   "<span color='#a6d189'>󰁼</span>",
+    //   "<span color='#a6d189'>󰁽</span>",
+    //   "<span color='#a6d189'>󰁾</span>",
+    //   "<span color='#a6d189'>󰁿</span>",
+    //   "<span color='#a6d189'>󰂀</span>",
+    //   "<span color='#a6d189'>󰂁</span>",
+    //   "<span color='#a6d189'>󰂂</span>",
+    //   "<span color='#a6d189'>󰁹</span>"
+    // ],
+    // "tooltip-format": "{controller_alias}\n{num_connections} connected",
+    // "tooltip-format-connected": "{controller_alias}\n{num_connections} connected\n\n{device_enumerate}",
+    // "tooltip-format-enumerate-connected": "{device_alias}",
+    // "tooltip-format-enumerate-connected-battery": "{device_alias}\t{icon} {device_battery_percentage}%"
   },
 
   "battery": {
     "states": {
-      "good": 95,
-      "warning": 30,
-      "critical": 20
+      "good": 90,
+      "warning": 20,
+      "critical": 10
     },
     "interval": 1,
     "format": "{icon} {capacity}%",
@@ -218,9 +218,9 @@
     "format-charging": "<span color='#a6d189'></span> {capacity}%",
     "format-plugged": "<span color='#a6d189'></span> {capacity}%",
     "format-icons": [
-      "<span color='#a6d189'>󰂎</span>",
-      "<span color='#a6d189'>󰁺</span>",
-      "<span color='#a6d189'>󰁻</span>",
+      "<span color='#e78284'>󰂎</span>",
+      "<span color='#ea999c'>󰁺</span>",
+      "<span color='#e5c890'>󰁻</span>",
       "<span color='#a6d189'>󰁼</span>",
       "<span color='#a6d189'>󰁽</span>",
       "<span color='#a6d189'>󰁾</span>",
