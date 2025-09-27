@@ -21,7 +21,7 @@ lock_screen() {
   fi
 }
 
-power_menu=$'󰜉  Reboot\n󰤄  Suspend\n  Shutdown\n󰒲  Hibernate\n  Lock\n󰍃  Logout\n󰜗  Hybrid Sleep'
+power_menu=$'󰜉  Reboot\n󰤄  Suspend\n󰒲  Hibernate\n  Shutdown\n  Lock\n󰍃  Logout\n󰜗  Hybrid Sleep'
 choice="$(prompt "" "$power_menu")"
 
 case "$choice" in
@@ -46,19 +46,16 @@ case "$choice" in
     ;;
   "󰤄  Suspend")
     if confirm "Suspend"; then
-      lock_screen
       systemctl suspend
     fi
     ;;
   "󰒲  Hibernate")
     if confirm "Hibernate"; then
-      lock_screen
       systemctl hibernate
     fi
     ;;
   "󰜗  Hybrid Sleep")
     if confirm "Hybrid Sleep"; then
-      lock_screen
       systemctl hybrid-sleep
     fi
     ;;
