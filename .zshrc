@@ -4,6 +4,9 @@ export VISUAL="nvim"
 
 export PATH="$HOME/bin:$HOME/.local/bin:$PATH"
 
+alias vim="nvim"
+alias vi="nvim"
+
 ZSH_THEME="candy"
 
 plugins=(git fzf z zsh-autosuggestions zsh-syntax-highlighting)
