@@ -6,7 +6,7 @@
   font-family: "monospace";
   font-weight: 700;
   font-size: 12;
-  min-height: 10px;
+  min-height: 16px;
   transition:
     background-color 60ms ease,
     color 60ms ease,
@@ -43,7 +43,7 @@ tooltip {
   color: @main-fg;
   margin: 3px 0;
   background: @main-bg;
-  padding: 2px 4px;
+  padding: 6px 8px 6px 4px;
 }
 
 #workspaces {
