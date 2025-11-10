@@ -1,1 +1,6 @@
 .config/tmux/plugins/
+
+.config/dconf/
+.config/nvim/
+.config/nvim
+.config/pulse/
