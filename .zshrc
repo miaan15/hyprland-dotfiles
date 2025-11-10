@@ -2,14 +2,14 @@ export ZSH="$HOME/.oh-my-zsh"
 export EDITOR="nvim"
 export VISUAL="nvim"
 
+plugins=(git fzf zsh-autosuggestions zsh-syntax-highlighting)
+
 export PATH="$HOME/bin:$HOME/.local/bin:$PATH"
 
 alias vim="nvim"
 alias vi="nvim"
 
 ZSH_THEME="candy"
-
-plugins=(git fzf z zsh-autosuggestions zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 

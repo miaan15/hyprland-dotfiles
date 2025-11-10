@@ -16,10 +16,6 @@
     "custom/r_end",
 
     "custom/l_end",
-    "custom/swaync",
-    "custom/r_end",
-
-    "custom/l_end",
     "hyprland/workspaces",
     "custom/r_end",
 
@@ -57,16 +53,16 @@
     "format": "{icon}",
     "rotate": 0,
     "format-icons": {
-      "activated": "<span size='85%' color='#a6d189'>󰥔</span>",
-      "deactivated": "<span size='85%' color='#a6d189'></span>"
+      "activated": "<span color='#a6d189'>󰥔</span>",
+      "deactivated": "<span color='#a6d189'></span>"
     }
   },
 
   "hyprland/workspaces": {
     "format": "{icon}",
     "format-icons": {
-      "active": "<span size='85%' color='#e8e5ed'></span>",
-      "default": "<span size='85%' color='#a6d189'></span>"
+      "active": "<span color='#e8e5ed'></span>",
+      "default": "<span color='#a6d189'></span>"
     },
     "disable-scroll": true,
     "rotate": 0,
@@ -228,27 +224,6 @@
       "<span color='#a6d189'>󰂂</span>",
       "<span color='#a6d189'>󰁹</span>"
     ]
-  },
-
-  "custom/swaync": {
-    "tooltip": true,
-    "format": "{icon}",
-    "format-icons": {
-      "notification": "<span size='85%' color='#c6d0f5'></span>",
-      "none": "<span size='85%' color='#a6d189'></span>",
-      "dnd-notification": "<span size='85%' color='#a6d189'></span>",
-      "dnd-none": "<span size='85%' color='#a6d189'></span>",
-      "inhibited-notification": "<span size='85%' color='#a6d189'></span>",
-      "inhibited-none": "<span size='85%' color='#a6d189'></span>",
-      "dnd-inhibited-notification": "<span size='85%' color='#a6d189'></span>",
-      "dnd-inhibited-none": "<span size='85%' color='#a6d189'></span>"
-    },
-    "return-type": "json",
-    "exec-if": "which swaync-client",
-    "exec": "swaync-client -swb",
-    "on-click": "sleep 0.1 && swaync-client -t -sw",
-    "on-click-right": "swaync-client -d -sw",
-    "escape": true
   },
 
   "custom/l_end": {
