@@ -103,7 +103,7 @@
 
   "cpu": {
     "interval": 9,
-    "format": "<span color='#a6d189'>󰍛</span>  {usage}%",
+    "format": "<span color='#a6d189'>󰍛</span> {usage}%",
     "rotate": 0
   },
 
@@ -112,9 +112,9 @@
       "c": 90
     },
     "interval": 3,
-    "format": "<span color='#a6d189'></span>  {percentage}%",
+    "format": "<span color='#a6d189'></span> {percentage}%",
     "rotate": 0,
-    "format-alt": "<span color='#a6d189'></span>  {used:0.1f}GB",
+    "format-alt": "<span color='#a6d189'></span> {used:0.1f}GB",
     "tooltip": true,
     "tooltip-format": "{used:0.1f}GB/{total:0.1f}GB : {percentage}%"
   },
@@ -132,7 +132,7 @@
 
   "network": {
     "tooltip": true,
-    "format-wifi": "<span color='#a6d189'></span>  {essid}",
+    "format-wifi": "<span color='#a6d189'></span> {essid}",
     "rotate": 0,
     "format-ethernet": "<span color='#a6d189'>󰈀</span> {ifname}",
     "tooltip-format": "Network: <big><b>{essid}</b></big>\nSignal strength: <b>{signaldBm}dBm ({signalStrength}%)</b>\nFrequency: <b>{frequency}MHz</b>\nInterface: <b>{ifname}</b>\nIP: <b>{ipaddr}/{cidr}</b>\nGateway: <b>{gwaddr}</b>\nNetmask: <b>{netmask}</b>\nDownload: {bandwidthDownBytes}\nUpload: {bandwidthUpBytes}",
@@ -144,7 +144,7 @@
   },
 
   "pulseaudio": {
-    "format": "{icon}  {volume}",
+    "format": "{icon} {volume}",
     "rotate": 0,
     "format-muted": "<span color='#a6d189'></span> muted",
     "on-click": "pavucontrol -t 3",
