@@ -6,3 +6,10 @@
 .config/pulse/
 .config/go/
 .config/discord/
+.config/session/
+.config/vlc/
+.config/QtProject.conf
+.config/dolphinrc
+.config/kiorc
+.config/trashrc
+.config/git
